@@ -35,6 +35,10 @@ button {
   cursor: pointer;
 }
 
+.button-trans:hover {
+  transition: font-size 3s;
+}
+
 #particles-js {
   z-index: -1;
   height: 100vh;
@@ -120,7 +124,7 @@ button {
 }
 
 #qualifications img {
-  height: 150px;
+  height: 15vh;
   width: auto;
   margin: 2vh;
   align-self: center;
@@ -152,6 +156,9 @@ button {
   width: 100%;
   background: var(--color1);
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #contact h3 {
@@ -159,9 +166,14 @@ button {
   padding-top: 5vh;
 }
 
+#contact p {
+  font-size: 3vh;
+}
+
 #contact-desc {
-  text-align: center;
   font-size: 2.5vh;
+  width: 80vh;
+  padding: 4vh;
 }
 
 #contact-info {
@@ -176,7 +188,7 @@ button {
 }
 
 .contact-left {
-  width: 15vw;
+  width: 25vw;
 }
 
 .contact-right {
@@ -195,4 +207,15 @@ button {
 #contact a:visited {
   text-decoration: inherit;
   color: inherit;
+}
+
+@media screen and (max-width: 1366px) {
+#about-area {
+  width: 80vh;
+}
+
+  #qualifications img {
+    height: 10vh;
+    width: auto;
+  }
 }

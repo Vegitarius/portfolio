@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Portfolio</title>
 
-  <link rel="stylesheet" href="nav.css">
-  <link rel="stylesheet"  href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"  href="nav.css">
 
   <style>
     @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
@@ -28,7 +28,6 @@
 
   <nav id="navbar">
     <ul id="main-nav">
-
       <li>
         <a class="nav-link-img nav-logo" href="./index.html">
           <img class="nav-img" 
@@ -38,44 +37,55 @@
         </a>
       </li>
 
-      <li>
-        <a class="nav-link" href="#about">About Me</a>
-      </li>
+      <div id="hamburger">
+        <div class="ham-icon1"></div>
+        <div class="ham-icon2"></div>
+        <div class="ham-icon3"></div>
+      </div>
 
-      <li>
-          <a class="nav-link" href="#qualifications">Qualifications</a>
+      <div id="navbar-links" class="links">
+        <li>
+          <a class="nav-link" href="#about">About Me</a>
         </li>
 
-      <li>
-        <a class="nav-link" href="./Projects.html">Projects</a>
-      </li>
+        <li>
+            <a class="nav-link" href="#qualifications">Qualifications</a>
+          </li>
 
-      <li>
-        <a class="nav-link contact" href="https://codepen.io/Vegitarius">Codepen</a>
-      </li>
+        <li>
+          <a class="nav-link" href="./Projects.html">Projects</a>
+        </li>
 
-      <li>
-        <a class="nav-link contact" href="#contact">Contact Me</a>
-      </li>
+        <li>
+          <a class="nav-link contact" href="https://codepen.io/Vegitarius">Codepen</a>
+        </li>
 
-      <li>
-        <a class="nav-link-img" href="https://github.com/Vegitarius">
-          <img class="nav-img" 
-            src="./assets/github_logo.png" 
-            alt="github profile"
-          />
-        </a>
-      </li>
+        <li>
+          <a class="nav-link contact" href="https://www.codewars.com/users/Vegitarius">CodeWars</a>
+        </li>
 
-      <li>
-        <a class="nav-link-img" href="https://www.linkedin.com/in/vincent-gordon-59b265173">
-          <img class="nav-img" 
-            src="./assets/Linkedin_icon.svg.jpg" 
-            alt="linkedin profile"
-          />
-        </a>
-      </li>
-      
+        <li>
+          <a class="nav-link contact" href="#contact">Contact Me</a>
+        </li>
+
+        <li>
+          <a class="nav-link-img" href="https://github.com/Vegitarius">
+            <img class="nav-img" 
+              src="./assets/github_logo.png" 
+              alt="github profile"
+            />
+          </a>
+        </li>
+
+        <li>
+          <a class="nav-link-img" href="https://www.linkedin.com/in/vincent-gordon-59b265173">
+            <img class="nav-img" 
+              src="./assets/Linkedin_icon.svg.jpg" 
+              alt="linkedin profile"
+            />
+          </a>
+        </li>
+      </div>
     </ul>  
   </nav>
 
@@ -97,7 +107,7 @@
   </div>
 
   <div id="qualifications">
-      <h3 id="qual-title">Current Qualifications I have worked with</h3>
+      <h3 id="qual-title">My Current Skills/ Qualifications I have worked with</h3>
     <div id="qual-container">
       <img 
         src="./assets//html5-icon.png"
@@ -155,5 +165,6 @@
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -4,12 +4,42 @@
 }
 
 #navbar {
+  position: fixed;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   z-index: 99;
   height: 10vh;
   font-family: 'Slabo 27px', serif;
+}
+
+#hamburger {
+  display: none;
+  cursor: pointer;
+  margin: 5px;
+  padding-right: 20px;
+}
+
+.ham-icon1, .ham-icon2, .ham-icon3 {
+  width: 35px;
+  height: 5px;
+  background: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.change .ham-icon1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .ham-icon2 {
+  opacity: 0;
+}
+
+.change .ham-icon3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-9px, -6px);
 }
 
 #main-nav {
@@ -24,8 +54,8 @@
 .nav-link {
   color: white;
   text-decoration: none;
-  float: left;
   display: block;
+  float: left;
   padding: 14px 16px;
   text-align: center;
   border-right: 1px solid var(--color2);
@@ -41,6 +71,8 @@
 
 .nav-logo {
   float: left;
+  border-right: 1px solid var(--color2 );
+  border-left: 0;
 }
 
 .nav-img {
@@ -50,4 +82,73 @@
 .nav-link:hover {
   color: var(--color1);
   background: white;
+}
+
+@media screen and (max-width: 1366px) {
+  .nav-logo {
+    border-right: none;
+  }
+  #navbar {
+    position: sticky;
+    font-size: 4vh;
+  }
+
+  #main-nav {
+    position: sticky;
+  }
+
+  #navbar-links {
+    display: none;
+  }
+
+  .nav-link {
+    display: block;
+    border-right: none;
+  }
+
+  .nav-link-img {
+    display: none;
+  }
+
+  .nav-logo {
+    display: block;
+    float: left;
+    padding: .6vh;
+  }
+
+  #hamburger {
+    display: block;
+    float: right;
+  }
+}
+
+@media screen and (max-height: 1366px) {
+  .nav-logo {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-height: 823px) {
+  .nav-logo {
+    padding: 1.4px;
+  }
+}
+
+@media screen and (max-height: 736px) {
+  .nav-logo {
+    padding: 4px;
+  }
+}
+
+@media screen and (max-height: 667px) {
+  .nav-logo {
+    padding: 5px;
+  }
+}
+
+
+@media screen and (max-height: 640px) {
+  .nav-logo {
+    padding: 8px;
+  }
 }
