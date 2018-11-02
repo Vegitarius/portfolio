@@ -61,3 +61,12 @@ p {
   color: inherit;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1366px) {
+  p {
+    width: 80vw;
+  }
+  #project img {
+    width: 85vw;
+  }
+}
