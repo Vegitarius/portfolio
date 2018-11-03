@@ -18,7 +18,3 @@ hamburger.addEventListener("click", mobileNavDisplay);
 hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("change");
 });
-
-document.getElementById("about").scrollIntoView(true);
-document.getElementById("qualifications").scrollIntoView(true);
-document.getElementById("contact").scrollIntoView(true);lick;
