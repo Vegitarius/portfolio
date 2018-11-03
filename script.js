@@ -18,31 +18,32 @@ hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("change");
 });
 
-const contactScroll = () => {
-  document.getElementById('contact').scrollIntoView({ 
-    behavior: 'smooth' 
+const aboutScroll = () => {
+  document.getElementById("about").scrollIntoView({
+    behavior: 'smooth'
   });
-  hamburger.classList.toggle("change");
-  mobileNavDisplay();
+  if (window.innerWidth <= 1366) {
+    hamburger.classList.toggle("change");
+    mobileNavDisplay();
+  }
 };
 
 const qualScroll = () => {
   document.getElementById("qualifications").scrollIntoView({
     behavior: 'smooth'
   });
-  hamburger.classList.toggle("change");
-  mobileNavDisplay();
+  if (window.innerWidth <= 1366) {
+    hamburger.classList.toggle("change");
+    mobileNavDisplay();
+  }
 };
 
-const aboutScroll = () => {
-  document.getElementById("about").scrollIntoView({
-    behavior: 'smooth'
+const contactScroll = () => {
+  document.getElementById('contact-topper').scrollIntoView({ 
+    behavior: 'smooth' 
   });
-  hamburger.classList.toggle("change");
-  mobileNavDisplay();
-};
-
-const aboutScrollOutside = () => {
-  window.location.href = "/";
-  aboutScroll();
+  if (window.innerWidth <= 1366) {
+    hamburger.classList.toggle("change");
+    mobileNavDisplay();
+  }
 };
