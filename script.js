@@ -41,3 +41,8 @@ const aboutScroll = () => {
   hamburger.classList.toggle("change");
   mobileNavDisplay();
 };
+
+const aboutScrollOutside = () => {
+  window.location.href = "/";
+  aboutScroll();
+};
