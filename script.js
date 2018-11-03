@@ -18,3 +18,21 @@ hamburger.addEventListener("click", mobileNavDisplay);
 hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("change");
 });
+
+const contactScroll = () => {
+  document.getElementById('contact').scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+};
+
+const qualScroll = () => {
+  document.getElementById("qualifications").scrollIntoView({
+    behavior: 'smooth'
+  })
+};
+
+const aboutScroll = () => {
+  document.getElementById("about").scrollIntoView({
+    behavior: 'smooth'
+  })
+};

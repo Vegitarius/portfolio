@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Portfolio</title>
+  <title></title>
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet"  href="nav.css">
@@ -20,7 +20,7 @@
       <div id="welcome-word-container">
         <h1 id="title">Hello, my name is Vincent Gordon</h1>
         <h2>Welcome to my Personal Website</h2>
-        <button id="welcome-button">View my Portfolio</button>
+        <button id="welcome-button" onclick="aboutScroll()">View my Portfolio</button>
       </div>
     </div>
   </div>
@@ -44,11 +44,11 @@
 
       <div id="navbar-links" class="links">
         <li>
-          <a class="nav-link" href="#about">About Me</a>
+          <a class="nav-link" onclick="aboutScroll()">About Me</a>
         </li>
 
         <li>
-            <a class="nav-link" href="#qualifications">Qualifications</a>
+            <a class="nav-link" onclick="qualScroll()">Qualifications</a>
           </li>
 
         <li>
@@ -64,7 +64,7 @@
         </li>
 
         <li>
-          <a class="nav-link contact" href="#contact">Contact Me</a>
+          <a class="nav-link contact" onclick="contactScroll()">Contact Me</a>
         </li>
 
         <li>
@@ -137,7 +137,7 @@
   </div>
 
   <div id="project-anchor">
-    <a href="projects.html">Click Here to Check out Some of my Projects</a>
+    <a href="projects">Click Here to Check out Some of my Projects</a>
   </div>
 
   <div id="contact-topper"></div>
