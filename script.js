@@ -1,4 +1,3 @@
-
 const hamburger = document.getElementById("hamburger");
 
 const mobileNavDisplay = () => {
@@ -10,7 +9,7 @@ const mobileNavDisplay = () => {
     x.style.flexDirection = "column";
     x.style.justifyContent = "center";
     x.style.alignItems = "center";
-  }
+  };
 }
 
 hamburger.addEventListener("click", mobileNavDisplay);
@@ -23,16 +22,22 @@ const contactScroll = () => {
   document.getElementById('contact').scrollIntoView({ 
     behavior: 'smooth' 
   });
+  hamburger.classList.toggle("change");
+  mobileNavDisplay();
 };
 
 const qualScroll = () => {
   document.getElementById("qualifications").scrollIntoView({
     behavior: 'smooth'
-  })
+  });
+  hamburger.classList.toggle("change");
+  mobileNavDisplay();
 };
 
 const aboutScroll = () => {
   document.getElementById("about").scrollIntoView({
     behavior: 'smooth'
-  })
+  });
+  hamburger.classList.toggle("change");
+  mobileNavDisplay();
 };

@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title></title>
+  <title>Hello and Welcome</title>
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet"  href="nav.css">
+  <link rel="stylesheet" href="index.css">
 
   <style>
     @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
@@ -20,7 +21,7 @@
       <div id="welcome-word-container">
         <h1 id="title">Hello, my name is Vincent Gordon</h1>
         <h2>Welcome to my Personal Website</h2>
-        <button id="welcome-button" onclick="aboutScroll()">View my Portfolio</button>
+        <button id="welcome-button">View my Portfolio</button>
       </div>
     </div>
   </div>
@@ -36,38 +37,38 @@
         </a>
       </li>
 
-      <div id="hamburger">
+      <div id="hamburger" tabindex="1">
         <div class="ham-icon1"></div>
         <div class="ham-icon2"></div>
         <div class="ham-icon3"></div>
       </div>
 
       <div id="navbar-links" class="links">
-        <li>
+        <li tabindex="2">
           <a class="nav-link" onclick="aboutScroll()">About Me</a>
         </li>
 
-        <li>
+        <li tabindex="2">
             <a class="nav-link" onclick="qualScroll()">Qualifications</a>
           </li>
 
-        <li>
+        <li tabindex="2">
           <a class="nav-link" href="./projects">Projects</a>
         </li>
 
-        <li>
+        <li tabindex="2">
           <a class="nav-link contact" href="https://codepen.io/Vegitarius">Codepen</a>
         </li>
 
-        <li>
+        <li tabindex="2">
           <a class="nav-link contact" href="https://www.codewars.com/users/Vegitarius">CodeWars</a>
         </li>
 
-        <li>
+        <li tabindex="2">
           <a class="nav-link contact" onclick="contactScroll()">Contact Me</a>
         </li>
 
-        <li>
+        <li tabindex="2">
           <a class="nav-link-img" href="https://github.com/Vegitarius">
             <img class="nav-img" 
               src="./assets/github_logo.png" 
@@ -76,7 +77,7 @@
           </a>
         </li>
 
-        <li>
+        <li tabindex="2">
           <a class="nav-link-img" href="https://www.linkedin.com/in/vincent-gordon-59b265173">
             <img class="nav-img" 
               src="./assets/Linkedin_icon.svg.jpg" 
@@ -88,7 +89,7 @@
     </ul>  
   </nav>
 
-  <div id="about-wrap">
+  <div id="about-wrap" tabindex="1">
     <div id="about">
       <div id="about-area">
         <img id="me-image" src="./assets/pic.jpg" alt="me" />
@@ -105,7 +106,7 @@
     </div>
   </div>
 
-  <div id="qualifications">
+  <div id="qualifications" tabindex="1">
       <h3 id="qual-title">My Current Skills/ Qualifications I have worked with</h3>
     <div id="qual-container">
       <img 
@@ -136,12 +137,12 @@
     </div>
   </div>
 
-  <div id="project-anchor">
-    <a href="projects">Click Here to Check out Some of my Projects</a>
+  <div id="project-anchor" tabindex="1">
+    <a href="projects">Check out Some of my Projects Here</a>
   </div>
 
   <div id="contact-topper"></div>
-  <div id="contact">
+  <div id="contact" tabindex="1">
     <h3>Get in Touch</h3>
     <p id="contact-desc">If you want to get in contact with me for anything or just
       say hello shoot me an E-mail.
@@ -149,15 +150,15 @@
     <div id="contact-info">
       <div id="contact-email">
         <p class="contact-left">E-mail:</p>
-        <p class="contact-right"><a href="mailto:gordonv15@gmail.com">gordonv15@gmail.com</a></p>
+        <p class="contact-right" tabindex="2"><a href="mailto:gordonv15@gmail.com">gordonv15@gmail.com</a></p>
       </div>
       <div id="contact-git">
         <p class="contact-left">GitHub:</p>
-        <p class="contact-right"><a href="https://github.com/Vegitarius">Vegitarius</a></p>
+        <p class="contact-right" tabindex="2"><a href="https://github.com/Vegitarius">Vegitarius</a></p>
       </div>
       <div id="contact-linkedin">
         <p class="contact-left">LinkedIn:</p>
-        <p class="contact-right"><a href="https://www.linkedin.com/in/vincent-gordon-59b265173">vgordon</a></p>
+        <p class="contact-right" tabindex="2"><a href="https://www.linkedin.com/in/vincent-gordon-59b265173">vgordon</a></p>
       </div>
     </div>
   </div>
