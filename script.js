@@ -1,3 +1,6 @@
+
+const hamburger = document.getElementById("hamburger");
+
 const mobileNavDisplay = () => {
   const x = document.getElementById("navbar-links");
   if (x.style.display === "flex") {
@@ -10,10 +13,12 @@ const mobileNavDisplay = () => {
   }
 }
 
-const hamburger = document.getElementById("hamburger");
-
 hamburger.addEventListener("click", mobileNavDisplay);
 
 hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("change");
 });
+
+document.getElementById("about").scrollIntoView(true);
+document.getElementById("qualifications").scrollIntoView(true);
+document.getElementById("contact").scrollIntoView(true);lick;

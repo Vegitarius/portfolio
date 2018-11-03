@@ -191,7 +191,7 @@ button {
 #contact-email, #contact-git, #contact-linkedin {
   display: flex;
   justify-content: center;
-  margin: 3vh;
+  padding: 3vh;
 }
 
 .contact-left {
