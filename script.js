@@ -20,7 +20,8 @@ hamburger.addEventListener("click", function() {
 
 const aboutScroll = () => {
   document.getElementById("about").scrollIntoView({
-    behavior: 'smooth'
+    behavior: "smooth",
+    block: "start"
   });
   if (window.innerWidth <= 1366) {
     hamburger.classList.toggle("change");
@@ -30,7 +31,8 @@ const aboutScroll = () => {
 
 const qualScroll = () => {
   document.getElementById("qualifications").scrollIntoView({
-    behavior: 'smooth'
+    behavior: "smooth",
+    block: "start"
   });
   if (window.innerWidth <= 1366) {
     hamburger.classList.toggle("change");
@@ -40,7 +42,8 @@ const qualScroll = () => {
 
 const contactScroll = () => {
   document.getElementById('contact-topper').scrollIntoView({ 
-    behavior: 'smooth' 
+    behavior: "smooth",
+    block: "start"
   });
   if (window.innerWidth <= 1366) {
     hamburger.classList.toggle("change");

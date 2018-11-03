@@ -5,11 +5,10 @@
 
 #navbar {
   position: fixed;
-  position: sticky;
   position: -webkit-sticky;
+  position: sticky;
   top: 0;
   z-index: 99;
-  height: 10vh;
   font-family: 'Slabo 27px', serif;
 }
 
@@ -43,8 +42,8 @@
 }
 
 #main-nav {
+  border-top: 3px solid var(--color2);
   border-bottom: 3px solid var(--color2);
-  border-top: 1px solid var(--color2);
   overflow: hidden;
   width: 100%;
   background-color: var(--color1);
@@ -66,22 +65,22 @@
   display: block;
   height: 5vh;
   border-left: 1px solid var(--color2);
-  padding: 0px 16px;
-}
-
-.nav-logo {
-  float: left;
-  border-right: 1px solid var(--color2 );
-  border-left: 0;
+  padding: 1px 16px;
 }
 
 .nav-img {
   height: 5vh;
 }
+.nav-logo {
+  float: left;
+  border-left: 0;
+  border-right: 1px solid var(--color2);
+}
 
-.nav-link:hover {
+.nav-link:hover, .nav-img:hover {
   color: var(--color1);
   background: white;
+  border: 3px solid var(--color2);
 }
 
 @media screen and (max-width: 1366px) {
@@ -113,7 +112,6 @@
   .nav-logo {
     display: block;
     float: left;
-    padding: .6vh;
   }
 
   #hamburger {
