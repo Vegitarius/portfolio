@@ -162,9 +162,16 @@
 .contact-right {
   width: 60vw;
 }
-
 .contact-right:hover {
+  color: var(--color2);
+}
+
+.contact-right a:hover  {
   text-decoration: underline;
+  background: white;
+  padding: .75vh;
+  border: 3px solid var(--color2);
+  opacity: .75;
 }
 
 #contact a:link, #contact a:visited {
