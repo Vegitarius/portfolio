@@ -124,61 +124,6 @@
   height: 10vh;
 }
 
-#contact {
-  height: 95vh;
-  width: 100%;
-  background: var(--color1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#contact h3 {
-  padding: 2vh;
-  padding-top: 5vh;
-}
-
-#contact-desc {
-  font-size: 2.5vh;
-  width: 75vw;
-  padding: 4vh;
-}
-
-#contact-info {
-  display: flex;
-  flex-direction: column;
-}
-
-#contact-email, #contact-git, #contact-linkedin {
-  display: flex;
-  justify-content: center;
-  padding: 3vh;
-}
-
-.contact-left {
-  width: 30vw;
-}
-
-.contact-right {
-  width: 60vw;
-}
-.contact-right:hover {
-  color: var(--color2);
-}
-
-.contact-right a:hover  {
-  text-decoration: underline;
-  background: white;
-  padding: .75vh;
-  border: 3px solid var(--color2);
-  opacity: .75;
-}
-
-#contact a:link, #contact a:visited {
-  text-decoration: inherit;
-  color: inherit;
-}
-
 @media screen and (max-width: 1366px) {
   #welcome, #qualifications {
     width: 100%;
@@ -192,10 +137,6 @@
     height: 10vh;
     width: auto;
     margin: 5vh;
-  }
-
-  #contact-desc {
-    width: 90vw;
   }
 }
 
