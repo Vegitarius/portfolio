@@ -18,27 +18,27 @@ hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("change");
 });
 
-const aboutScroll = () => {
+document.getElementById("nav-about").addEventListener("click", function() {
   document.getElementById("about").scrollIntoView({
     behavior: "smooth",
-    block: "start"
+    block: "end"
   });
   if (window.innerWidth <= 1366) {
     hamburger.classList.toggle("change");
     mobileNavDisplay();
   }
-};
+});
 
-const qualScroll = () => {
+document.getElementById("nav-qual").addEventListener("click", function() {
   document.getElementById("qualifications").scrollIntoView({
     behavior: "smooth",
-    block: "start"
+    block: "end"
   });
   if (window.innerWidth <= 1366) {
     hamburger.classList.toggle("change");
     mobileNavDisplay();
   }
-};
+});
 
 const contactScroll = () => {
   document.getElementById('contact-topper').scrollIntoView({ 
