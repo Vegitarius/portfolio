@@ -17,4 +17,20 @@ document.getElementById("nav-contact").addEventListener("click", function() {
     hamburgerToggle();
     mobileNavDisplay();
   }
-})
+});
+
+let imgToggler = (name, amount) => {
+  setInterval(function() {
+    let img = document.getElementById("project1-image");
+    let pic = Number(img.src.slice(-5, -4));
+    if (pic >= amount) {
+      img.src = `./assets/${name}01.png`
+    } else {
+      img.src = `./assets/${name}0${++pic}.png`
+    }
+    console.log(pic, img.src);
+  }, 5000)
+
+}
+
+imgToggler("detect", 6);
