@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="animated fadeIn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />  <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,86 +8,51 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet"  href="nav.css">
   <link rel="stylesheet" href="index.css">
-
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
-  </style>
-
+  <link rel="stylesheet" href="animate.css">
 </head>
 
 <body>
+
+  <div id="hamburger" tabindex="1">
+    <span class="ham-icon1"></span>
+    <span class="ham-icon2"></span>
+    <span class="ham-icon3"></span>
+  </div>
+
+  <a id="home" href="/">
+    Vin G Works
+  </a>
+
+  <nav id="navbar">
+    <ul>
+        <li tabindex="2">
+          <a class="nav-link animated" id="nav-about">About Me</a>
+        </li>
+
+        <li tabindex="2">
+            <a class="nav-link animated" id="nav-qual">Qualifications</a>
+          </li>
+
+        <li tabindex="2">
+          <a class="nav-link animated" href="./projects">Projects</a>
+        </li>
+
+        <li tabindex="2">
+          <a class="nav-link contact animated" id="nav-contact">Contact Me</a>
+        </li>
+
+    </ul>  
+  </nav>
+
   <div id="welcome">
     <div id="particles-js">
-      <div id="welcome-word-container">
+      <div id="welcome-word-container" class="animated zoomIn">
         <h1 id="title">Hello, my name is Vincent Gordon</h1>
         <h2>Welcome to my Personal Website</h2>
         <button id="welcome-button">View my Portfolio</button>
       </div>
     </div>
   </div>
-
-  <nav id="navbar">
-    <ul id="main-nav">
-      <li>
-        <a class="nav-link-img nav-logo" href="/">
-          <img class="nav-img" 
-            src="assets/logo.png"
-            alt="logo"  
-          /> 
-        </a>
-      </li>
-
-      <div id="hamburger" tabindex="1">
-        <div class="ham-icon1"></div>
-        <div class="ham-icon2"></div>
-        <div class="ham-icon3"></div>
-      </div>
-
-      <div id="navbar-links" class="links">
-        <li tabindex="2">
-          <a class="nav-link" id="nav-about">About Me</a>
-        </li>
-
-        <li tabindex="2">
-            <a class="nav-link" id="nav-qual">Qualifications</a>
-          </li>
-
-        <li tabindex="2">
-          <a class="nav-link" href="./projects">Projects</a>
-        </li>
-
-        <li tabindex="2">
-          <a class="nav-link contact" href="https://codepen.io/Vegitarius">Codepen</a>
-        </li>
-
-        <li tabindex="2">
-          <a class="nav-link contact" href="https://www.codewars.com/users/Vegitarius">CodeWars</a>
-        </li>
-
-        <li tabindex="2">
-          <a class="nav-link contact" id="nav-contact">Contact Me</a>
-        </li>
-
-        <li tabindex="2">
-          <a class="nav-link-img" href="https://github.com/Vegitarius">
-            <img class="nav-img" 
-              src="./assets/github_logo.png" 
-              alt="github profile"
-            />
-          </a>
-        </li>
-
-        <li tabindex="2">
-          <a class="nav-link-img" href="https://www.linkedin.com/in/vincent-gordon-59b265173">
-            <img class="nav-img" 
-              src="./assets/Linkedin_icon.svg.jpg" 
-              alt="linkedin profile"
-            />
-          </a>
-        </li>
-      </div>
-    </ul>  
-  </nav>
 
   <div id="about-wrap" tabindex="1">
     <div id="about">
@@ -138,7 +103,7 @@
   </div>
 
   <div id="project-anchor" tabindex="1">
-    <a href="projects">Check out Some of my Projects Here</a>
+    <a class="animated" href="projects">Check out Some of my Projects Here</a>
   </div>
 
   <div id="contact-topper"></div>
@@ -150,15 +115,15 @@
     <div id="contact-info">
       <div id="contact-email">
         <p class="contact-left">E-mail:</p>
-        <p class="contact-right" tabindex="2"><a href="mailto:gordonv15@gmail.com">gordonv15@gmail.com</a></p>
+        <a class="contact-right animated" href="mailto:gordonv15@gmail.com">gordonv15@gmail.com</a>
       </div>
       <div id="contact-git">
         <p class="contact-left">GitHub:</p>
-        <p class="contact-right" tabindex="2"><a href="https://github.com/Vegitarius">Vegitarius</a></p>
+        <a class="contact-right animated" href="https://github.com/Vegitarius">Vegitarius</a>
       </div>
       <div id="contact-linkedin">
         <p class="contact-left">LinkedIn:</p>
-        <p class="contact-right" tabindex="2"><a href="https://www.linkedin.com/in/vincent-gordon-59b265173">vgordon</a></p>
+        <a class="contact-right animated" href="https://www.linkedin.com/in/vincent-gordon-59b265173">vgordon</a>
       </div>
     </div>
   </div>
@@ -166,5 +131,6 @@
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="script.js"></script>
   <script src="index.js"></script>
+  
 </body>
 </html>

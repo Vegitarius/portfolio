@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="animated fadeIn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,66 +9,35 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="project.css">
-
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
-  </style>
+  <link rel="stylesheet" href="animate.css">
 
 </head>
 <body>
 
+  <div id="hamburger" tabindex="1">
+    <span class="ham-icon1"></span>
+    <span class="ham-icon2"></span>
+    <span class="ham-icon3"></span>
+  </div>
+
+  <a id="home" href="/">
+    Vin G Works
+  </a>
+
   <nav id="navbar">
-    <ul id="main-nav">
-      <li>
-        <a class="nav-link-img nav-logo" href="/">
-          <img class="nav-img" 
-            src="assets/logo.png"
-            alt="logo"  
-          /> 
-        </a>
-      </li>
-
-      <div id="hamburger" tabindex="2">
-        <div class="ham-icon1"></div>
-        <div class="ham-icon2"></div>
-        <div class="ham-icon3"></div>
-      </div>
-
-      <div id="navbar-links" class="links">
+    <ul>
         <li tabindex="2">
-          <a id="nav-top" class="nav-link">Back to Top</a>
+          <a class="nav-link animated" id="nav-about" href="/">Home</a>
         </li>
 
         <li tabindex="2">
-          <a class="nav-link contact" href="https://codepen.io/Vegitarius">Codepen</a>
-        </li>
+            <a class="nav-link animated" id="nav-qual" href="/projects">Back To Top</a>
+          </li>
 
         <li tabindex="2">
-          <a class="nav-link contact" href="https://www.codewars.com/users/Vegitarius">CodeWars</a>
+          <a class="nav-link contact animated" id="nav-contact">Contact Me</a>
         </li>
 
-        <li tabindex="2">
-          <a id="nav-contact" class="nav-link contact">Contact Me</a>
-        </li>
-
-        <li tabindex="2">
-          <a class="nav-link-img" href="https://github.com/Vegitarius">
-            <img class="nav-img" 
-              src="./assets/github_logo.png" 
-              alt="github profile"
-            />
-          </a>
-        </li>
-
-        <li tabindex="2">
-          <a class="nav-link-img" href="https://www.linkedin.com/in/vincent-gordon-59b265173">
-            <img class="nav-img" 
-              src="./assets/Linkedin_icon.svg.jpg" 
-              alt="linkedin profile"
-            />
-          </a>
-        </li>
-      </div>
     </ul>  
   </nav>
 
@@ -83,9 +52,28 @@
         outlining it when provided a link to a picture using the Clarifai
         API.
       </p>
-      <img id="project1-image" src="./assets/detect01.png" alt="face detect pic">
+        <div class='project-pictures'>
+            <div class="previous-arrow arrow pointer"></div>
+          <img id="project1-image" src="./assets/detect01.png" alt="face detect pic">
+          <div class="next-arrow arrow pointer"></div>
+        </div>
     </div>
   </div>
+
+  <div id="project2" tabindex="1">
+    <div class='container2'>
+      <a href="github.io">
+        <h3>Currently In Process</h3>
+      </a>
+      <p>
+        I am currently working a website for a small local donut shop in
+        my area. It is a very small and family owned business that lacks
+        any website.
+      </p>
+    </div>
+  </div>
+
+
 
   <div id="contact-topper"></div>
   <div id="contact" tabindex="1">
@@ -96,15 +84,15 @@
     <div id="contact-info">
       <div id="contact-email">
         <p class="contact-left">E-mail:</p>
-        <p class="contact-right" tabindex="2"><a href="mailto:gordonv15@gmail.com">gordonv15@gmail.com</a></p>
+        <a class="contact-right animated" href="mailto:gordonv15@gmail.com">gordonv15@gmail.com</a>
       </div>
       <div id="contact-git">
         <p class="contact-left">GitHub:</p>
-        <p class="contact-right" tabindex="2"><a href="https://github.com/Vegitarius">Vegitarius</a></p>
+        <a class="contact-right animated" href="https://github.com/Vegitarius">Vegitarius</a>
       </div>
       <div id="contact-linkedin">
         <p class="contact-left">LinkedIn:</p>
-        <p class="contact-right" tabindex="2"><a href="https://www.linkedin.com/in/vincent-gordon-59b265173">vgordon</a></p>
+        <a class="contact-right animated" href="https://www.linkedin.com/in/vincent-gordon-59b265173">vgordon</a>
       </div>
     </div>
   </div>

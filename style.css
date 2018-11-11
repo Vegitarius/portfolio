@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
 :root {
   --color1: #2c2e43;
   --color2: #4f5ff7;
@@ -37,12 +39,16 @@ h3 {
   text-decoration: underline;
 }
 
-p {
+p, a {
   font-size: var(--font-med);
 }
 
 button {
   cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer
 }
 
 
@@ -54,7 +60,7 @@ button {
 }
 
 #contact {
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   background: var(--color1);
   display: flex;
@@ -91,21 +97,30 @@ button {
 .contact-right {
   width: 60vw;
 }
-.contact-right:hover {
-  color: var(--color2);
-}
-
-.contact-right a:hover  {
-  text-decoration: underline;
-  background: white;
-  padding: .75vh;
-  border: 3px solid var(--color2);
-  opacity: .75;
-}
 
 #contact a:link, #contact a:visited {
   text-decoration: inherit;
   color: inherit;
+}
+
+.previous-arrow {
+  position: relative;
+  color: var(--color2);
+  border-left: 5px solid;
+  border-bottom: 5px solid;
+  height: 30px;
+  width: 30px;
+  transform: rotate(45deg);
+}
+
+.next-arrow {
+  position: relative;
+  color: var(--color2);
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+  height: 30px;
+  width: 30px;
+  transform: rotate(-45deg);
 }
 
 @media screen and (max-width: 1366px) {
