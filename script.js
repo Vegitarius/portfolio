@@ -33,10 +33,7 @@ document.getElementById("nav-contact").addEventListener("click", function() {
   document.getElementById('contact').scrollIntoView({ 
     behavior: "smooth",
   });
-  if (window.innerWidth <= 1366) {
     hamburgerToggle();
-    mobileNavDisplay();
-  };
 });
 
 contacts.forEach(link => {
