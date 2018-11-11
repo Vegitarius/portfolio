@@ -41,26 +41,61 @@
     </ul>  
   </nav>
 
-  <div id="project" tabindex="1">
-    <div class="container1">
-      <a href="http://detectionary.herokuapp.com/">
-        <h3>Detectionary</h3>
-      </a>
-      <p>This was my first website that I deployed. It was my first dive
-        into React. I also used Node for the server and PostgreSQL for the 
-        database. It is a simple website application that detects a face,
-        outlining it when provided a link to a picture using the Clarifai
-        API.
-      </p>
-        <div class='project-pictures'>
-            <div class="previous-arrow arrow pointer"></div>
-          <img id="project1-image" src="./assets/detect01.png" alt="face detect pic">
-          <div class="next-arrow arrow pointer"></div>
-        </div>
-    </div>
-  </div>
+  <div class="project-container" tabindex="1">
+      <div class="container1">
+        <a href="http://detectionary.herokuapp.com/">
+          <h3>Detectionary</h3>
+        </a>
+        <p>This was my first website that I deployed. It was my first dive
+          into React. I also used Node for the server and PostgreSQL for the 
+          database. It is a simple website application that detects a face,
+          outlining it when provided a link to a picture using the Clarifai
+          API.
+        </p>
+        <a class="proj-link" href="http://detectionary.herokuapp.com/">Visit Site</a>
+          <div class="project-pictures">
 
-  <div id="project2" tabindex="1">
+            <a class="prev pointer" onclick="plusSlides(-1)">&#10094;</a>
+            <div class="my-slide animated slideInLeft">
+              <img src="./assets/detect01.png" alt="detect01">
+            </div>
+
+            <div class="my-slide animated slideInLeft">
+              <img src="./assets/detect02.png" alt="detect02">
+            </div>
+
+            <div class="my-slide animated slideInLeft"">
+              <img src="./assets/detect03.png" alt="detect03">
+            </div>
+
+            <div class="my-slide animated slideInLeft"">
+              <img src="./assets/detect04.png" alt="detect04">
+            </div>
+
+            <div class="my-slide animated slideInLeft"">
+              <img src="./assets/detect05.png" alt="detect05">
+            </div>
+            
+            <div class="my-slide animated slideInLeft"">
+              <img src="./assets/detect06.png" alt="detect06">
+            </div>
+            <a class="next pointer" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span>  
+          </div>
+
+
+      </div>
+    </div>
+
+  <div class="project-container" tabindex="1">
     <div class='container2'>
       <a href="github.io">
         <h3>Currently In Process</h3>

@@ -3,6 +3,7 @@
 #home {
   font-family: 'Great Vibes', cursive;
   font-size: 4vh;
+  font-weight: bold;
   color: var(--color2);
   position: fixed;
   z-index: 2;

@@ -1,30 +1,26 @@
-const nextArrow1 = document.querySelector(".next-arrow");
-const prevArrow1 = document.querySelector(".previous-arrow");
+let slideIndex = 1;
+showSlides(slideIndex);
 
-let imgToggleNext = (projectImgId, name, amount) => {
-  let img = document.getElementById(projectImgId);
-  let pic = Number(img.src.slice(-5, -4));
-  if (pic >= amount) {
-    img.src = `./assets/${name}01.png`
-  } else {
-    img.src = `./assets/${name}0${++pic}.png`
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n)
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("my-slide");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-};
-
-let imgTogglePrev = (projectImgId, name, amount) => {
-  let img = document.getElementById(projectImgId);
-  let pic = Number(img.src.slice(-5, -4));
-  if (pic <= 1) {
-    img.src = `./assets/${name}0${amount}.png`
-  } else {
-    img.src = `./assets/${name}0${--pic}.png`
-  };
-};
-
-nextArrow1.addEventListener("click", function() {
-  imgToggleNext("project1-image", "detect", 6)
-});
-
-prevArrow1.addEventListener("click", function() {
-  imgTogglePrev("project1-image", "detect", 6)
-});
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
