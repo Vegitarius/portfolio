@@ -103,26 +103,6 @@ button {
   color: inherit;
 }
 
-.previous-arrow {
-  position: relative;
-  color: var(--color2);
-  border-left: 5px solid;
-  border-bottom: 5px solid;
-  height: 30px;
-  width: 30px;
-  transform: rotate(45deg);
-}
-
-.next-arrow {
-  position: relative;
-  color: var(--color2);
-  border-right: 5px solid;
-  border-bottom: 5px solid;
-  height: 30px;
-  width: 30px;
-  transform: rotate(-45deg);
-}
-
 @media screen and (max-width: 1366px) {
   #contact-desc {
     width: 90vw;
