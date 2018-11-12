@@ -8,7 +8,7 @@
   color: white;
 }
 
-#welcome-button:hover, #project-anchor a:hover {
+#welcome-button:hover {
   background: white;
   color: var(--color2);
 }
@@ -64,7 +64,6 @@
   padding: 2vh;
 }
 
-
 #about-info {
   padding: 2vh;
 }
@@ -106,6 +105,10 @@
   display: flex;
   justify-content: center;
   padding-top: 5vh;
+}
+
+#project-anchor a:hover {
+  box-shadow: 10px 10px 20px gray
 }
 
 #project-anchor a {
