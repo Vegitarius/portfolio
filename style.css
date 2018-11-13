@@ -86,7 +86,8 @@ button {
 
 #contact-email, #contact-git, #contact-linkedin {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  align-items: start;
   padding: 3vh;
 }
 
@@ -94,13 +95,36 @@ button {
   width: 30vw;
 }
 
-.contact-right {
-  width: 60vw;
-}
-
 #contact a:link, #contact a:visited {
   text-decoration: inherit;
   color: inherit;
+}
+
+.ul-mid-out {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+
+.ul-mid-out:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color2);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.ul-mid-out:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 @media screen and (max-width: 1366px) {
