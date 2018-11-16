@@ -13,14 +13,12 @@
   color: var(--color2);
 }
 
-
 #particles-js {
   z-index: -1;
   height: 100vh;
   width: 100%;
   background: var(--color1);
 }
-
 
 #welcome-word-container {
   position: absolute;
@@ -55,6 +53,20 @@
   border-radius: 15px;
 }
 
+#about a {
+  color: white;
+  text-decoration: none;
+}
+
+#about-info {
+  padding: 2vh;
+}
+
+#about p, #about a {
+  margin: 2vh;
+  font-size: 2.5vh;
+}
+
 #me-image {
   width: 30vh;
   height: auto;
@@ -62,15 +74,6 @@
   -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   padding: 2vh;
-}
-
-#about-info {
-  padding: 2vh;
-}
-
-#about p {
-  margin: 2vh;
-  font-size: 2.5vh;
 }
 
 #qualifications {
