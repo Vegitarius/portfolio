@@ -62,6 +62,7 @@ h3 {
 
 .my-slide {
   display: none;
+  animation: slideIn .6s;
 }
 
 .my-slide img {

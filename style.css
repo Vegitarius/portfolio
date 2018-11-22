@@ -149,6 +149,20 @@ button {
   }
 }
 
+@keyframes slideIn {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideIn {
+  animation: slideIn .3s;
+}
+
 
 @media screen and (max-width: 1366px) {
   #contact-desc {
