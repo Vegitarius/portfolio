@@ -16,6 +16,10 @@
   font-weight: normal;
 }
 
+html {
+  animation: fade 1s;
+}
+
 body {
   overflow-x: hidden;
   width: 100%;
@@ -31,6 +35,7 @@ h1 {
 }
 
 h2, h3 {
+  font-size: 4vh;
   font-size: var(--font-large);
   text-align: center;
 }
@@ -40,6 +45,7 @@ h3 {
 }
 
 p, a {
+  font-size: 3vh;
   font-size: var(--font-med);
 }
 
@@ -62,6 +68,7 @@ button {
 #contact {
   height: 100vh;
   width: 100%;
+  background: #2c2e43;
   background: var(--color1);
   display: flex;
   flex-direction: column;
@@ -98,6 +105,7 @@ button {
 #contact a:link, #contact a:visited {
   text-decoration: inherit;
   color: inherit;
+  transition: all .3s;
 }
 
 .ul-mid-out {
@@ -126,6 +134,21 @@ button {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+.grow {
+  transform: scale(1.1);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 
 @media screen and (max-width: 1366px) {
   #contact-desc {

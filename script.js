@@ -3,7 +3,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 const navbar = document.getElementById("navbar");
 const contacts = document.querySelectorAll(".contact-right");
 let aScrollPosition = window.pageYOffset;
-const socialBar =document.getElementById("social-bar");
+const socialBar = document.getElementById("social-bar");
 
 hamburgerToggle = () => {
   hamburger.classList.toggle("change");
@@ -17,7 +17,7 @@ navLinks.forEach(link => {
     navLinks.forEach(link => {
       link.style.opacity = ".15";
       event.target.style.opacity = "1";
-      event.target.classList.add("jello");
+      event.target.classList.add("grow");
     })
   }
 });
@@ -26,7 +26,7 @@ navLinks.forEach(link => {
   link.onmouseleave = (event) => {
     navLinks.forEach(link => {
       link.style.opacity = "1";
-      event.target.classList.remove("jello");
+      event.target.classList.remove("grow");
     })
   }
 });
@@ -40,13 +40,13 @@ document.getElementById("nav-contact").addEventListener("click", function() {
 
 contacts.forEach(link => {
   link.onmouseover = (event) => {
-    event.target.classList.add("pulse");
+    event.target.classList.add("grow");
   }
 });
 
 contacts.forEach(link => {
   link.onmouseleave = (event) => {
-    event.target.classList.remove("pulse")
+    event.target.classList.remove("grow")
   }
 });
 

@@ -19,16 +19,19 @@
 }
 
 .container1 {
+  color: #2c2e43;
   color: var(--color1);
   height: 96vh;
   margin: 2vh 0;
 } 
 
 .container1 h3 {
+  color: #2c2e43;
   color: var(--color1);
 }
 
 .container2 {
+  background: #2c2e43;
   background: var(--color1);
  -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
@@ -67,6 +70,7 @@ h3 {
 }
 
 .prev, .next {
+  color: #2c2e43;
   color: var(--color2);
   font-weight: bold;
   font-size: 24px;

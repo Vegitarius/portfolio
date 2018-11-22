@@ -1,41 +1,46 @@
-#particles-js, #welcome-word-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#particles-js {
+  position: absolute;
+  background: #2c2e43;
+  background: var(--color1);
+  height: 100%;
+  width: 100%;
 }
 
-#welcome-button, #project-anchor a {
+#welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#welcome button, #project-anchor a {
   color: white;
 }
 
-#welcome-button:hover {
+#welcome button:hover {
   background: white;
+  color: #4f5ff7;
   color: var(--color2);
 }
 
-#particles-js {
-  z-index: -1;
-  height: 100vh;
-  width: 100%;
-  background: var(--color1);
+#welcome h1, #welcome h2, #welcome button{
+  z-index: 1;
 }
 
-#welcome-word-container {
-  position: absolute;
-  flex-direction: column;
-}
-
-#welcome-button {
+#welcome button {
   padding: 20px;
   margin: 15px;
+  border: 2px solid #4f5ff7; 
   border: 2px solid var(--color2);
+  background: #2c2e43;
   background: var(--color1);
   font-size: 2vh;
-  opacity: 1;
 }
 
-#welcome-button:hover, #welcome-button:focus {
+#welcome button:hover, #welcome button:focus {
   opacity: .75;
+  border: 4px solid #4f5ff7;
   border: 4px solid var(--color2);
 }
 
@@ -46,6 +51,7 @@
 }
 
 #about-area {
+  background: #2c2e43;
   background: var(--color1);
   width: 55vw;
   margin: 25px;
@@ -83,6 +89,7 @@
   padding: 8vh 0;
   margin: 10vh 0;
   text-align: center;
+  background: #2c2e43;
   background: var(--color1);
 }
 
@@ -110,16 +117,19 @@
   padding-top: 5vh;
 }
 
-#project-anchor a:hover {
-  box-shadow: 10px 10px 20px gray
-}
-
 #project-anchor a {
   font-size: 4vh;
   text-align: center;
+  background: #2c2e43;
   background: var(--color1);
   border: 3px solid var(--color2);
   padding: 2vh;
+  transition: all .3s;
+}
+
+#project-anchor a:hover {
+  box-shadow: 10px 10px 20px gray;
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1366px) {
