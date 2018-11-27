@@ -5,7 +5,7 @@ const contacts = document.querySelectorAll(".contact-right");
 let aScrollPosition = window.pageYOffset;
 const socialBar = document.getElementById("social-bar");
 
-hamburgerToggle = () => {
+const hamburgerToggle = () => {
   hamburger.classList.toggle("change");
   navbar.classList.toggle("active");
 };
