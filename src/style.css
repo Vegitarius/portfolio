@@ -66,6 +66,10 @@ button {
   cursor: pointer
 }
 
+.tac {
+  text-align: center;
+}
+
 
 #contact-topper {
   -webkit-clip-path: polygon(49% 84%, 0% 100%, 100% 100%);

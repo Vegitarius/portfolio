@@ -25,7 +25,6 @@
 .container1 {
   color: #2c2e43;
   color: var(--color1);
-  height: 96vh;
   margin: 2vh 0;
 } 
 
@@ -64,12 +63,12 @@ h3 {
   align-items: center;
 }
 
-.my-slide {
+.proj-1, .proj-2, .proj-3 {
   display: none;
   animation: slideIn .6s;
 }
 
-.my-slide img {
+.proj-1 img, .proj-2 img, .proj-3 img {
   height: 48vh;
   max-width: 80vw;
 }
@@ -120,7 +119,7 @@ h3 {
     padding: 3vh;
   }    
   
-  .my-slide img {
+  .proj-1 img, .proj-2 img, .proj-3 {
     max-width: 80vw;
     height: 30vh
   }

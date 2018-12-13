@@ -1,7 +1,9 @@
 "use strict";
 
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex, "my-slide");
+showSlides(slideIndex, "p2");
+showSlides(slideIndex, "proj-3");
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -11,9 +13,9 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(n, pName) {
   var i;
-  var slides = document.getElementsByClassName("my-slide");
+  var slides = document.getElementsByClassName(pName);
   var dots = document.getElementsByClassName("dot");
 
   if (n > slides.length) {

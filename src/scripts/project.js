@@ -1,18 +1,21 @@
 let slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+showSlides(slideIndex, "proj-1", 'dot1');
+showSlides(slideIndex, "proj-2", 'dot2');
+showSlides(slideIndex, "proj-3", 'dot3');
+
+function plusSlides(n, pName, dName) {
+  showSlides(slideIndex += n, pName, dName);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n)
+function currentSlide(n, pName, dName) {
+  showSlides(slideIndex = n, pName, dName)
 }
 
-function showSlides(n) {
+function showSlides(n, pName, dName) {
   let i;
-  let slides = document.getElementsByClassName("my-slide");
-  let dots = document.getElementsByClassName("dot");
+  let slides = document.getElementsByClassName(pName);
+  let dots = document.getElementsByClassName(dName);
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {

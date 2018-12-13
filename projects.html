@@ -18,11 +18,11 @@
     <span class="ham-icon3"></span>
   </div>
 
-  <a id="home" href="/">
+  <a id="home" href="/" tabindex="1" accesskey="h">
     Vin G Works
   </a>
 
-  <nav id="navbar">
+  <nav id="navbar" tabindex="1" accesskey="n">
     <ul>
         <li tabindex="2">
           <a class="nav-link" id="nav-about" href="/">Home</a>
@@ -39,7 +39,7 @@
     </ul>  
   </nav>
 
-  <nav id="social-bar">
+  <nav id="social-bar" accesskey="s">
     <ul>
       <li>
         <a href="https://www.linkedin.com/in/vincent-gordon-59b265173">
@@ -85,59 +85,175 @@
     </ul>
   </nav>
 
-  <div class="project-container" tabindex="1">
+  <div class="project-container" tabindex="1" accesskey="p">
     <div class="container1">
       <a href="http://detectionary.herokuapp.com/">
         <h3>Detectionary</h3>
       </a>
       <p>This was my first website that I deployed. It was my first dive
         into React. I also used Node for the server and PostgreSQL for the 
-        database. It is a simple website application that detects a face,
+        database. <br />
+        It is a simple website application that detects a face,
         outlining it when provided a link to a picture using the Clarifai
         API.
       </p>
       <a class="proj-link ul-mid-out" href="http://detectionary.herokuapp.com/">Visit Site</a>
       <div class="project-pictures ">
 
-        <a class="prev pointer" onclick="plusSlides(-1)">&#10094;</a>
-        <div class="my-slide">
+        <a class="prev pointer" onclick="plusSlides(-1, 'proj-1', 'dot1')">&#10094;</a>
+        <div class='proj-1'>
           <img src="./assets/detect01.png" alt="detect01">
         </div>
 
-        <div class="my-slide">
+        <div class='proj-1'>
           <img src="./assets/detect02.png" alt="detect02">
         </div>
 
-        <div class="my-slide">
+        <div class='proj-1'>
           <img src="./assets/detect03.png" alt="detect03">
         </div>
 
-        <div class="my-slide">
+        <div class='proj-1'>
           <img src="./assets/detect04.png" alt="detect04">
         </div>
 
-        <div class="my-slide">
+        <div class='proj-1'>
           <img src="./assets/detect05.png" alt="detect05">
         </div>
         
-        <div class="my-slide">
+        <div class='proj-1'>
           <img src="./assets/detect06.png" alt="detect06">
         </div>
-        <a class="next pointer" onclick="plusSlides(1)">&#10095;</a>
+        <a class="next pointer" onclick="plusSlides(1, 'proj-1', 'dot1')">&#10095;</a>
       </div>
 
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span> 
-        <span class="dot" onclick="currentSlide(5)"></span> 
-        <span class="dot" onclick="currentSlide(6)"></span>  
+      <div>
+        <span class="dot dot1" onclick="currentSlide(1, 'proj-1', 'dot1')"></span> 
+        <span class="dot dot1" onclick="currentSlide(2, 'proj-1', 'dot1')"></span> 
+        <span class="dot dot1" onclick="currentSlide(3, 'proj-1', 'dot1')"></span>
+        <span class="dot dot1" onclick="currentSlide(4, 'proj-1', 'dot1')"></span> 
+        <span class="dot dot1" onclick="currentSlide(5, 'proj-1', 'dot1')"></span> 
+        <span class="dot dot1" onclick="currentSlide(6, 'proj-1', 'dot1')"></span>  
       </div>
     </div>
   </div>
 
-  <div class="project-container ip" tabindex="1">
+  <div class="project-container" tabindex="1" accesskey="n">
+    <div class="container2">
+      <a href="http://www.not-another-notes-app.com/">
+        <h3>Not Another Notes App</h3>
+      </a>
+      <p>
+        This was my first foray into building in aws and serverless. After
+        hearing about it multiple times on podcasts I decided to check out
+        what it was all about.<br />
+        Throughout building the backend I learned a lot
+        The frontend was built in React taking advantage of react-bootstrap
+        and react-router.
+      </p>
+      <a class="proj-link ul-mid-out" href="http://www.not-another-notes-app.com/">Visit Site</a>
+      <div class="project-pictures">
+
+        <a class="prev pointer" onclick="plusSlides(-1, 'proj-2', 'dot2')">&#10094;</a>
+        <div class="proj-2">
+          <img src="./assets/notes01.png" alt="notes01">
+        </div>
+
+        <div class="proj-2">
+          <img src="./assets/notes02.png" alt="notes02">
+        </div>
+
+        <div class="proj-2">
+          <img src="./assets/notes03.png" alt="notes03">
+        </div>
+
+        <div class="proj-2">
+          <img src="./assets/notes04.png" alt="notes04">
+        </div>
+
+        <div class="proj-2">
+          <img src="./assets/notes05.png" alt="notes05">
+        </div>
+        
+        <div class="proj-2">
+          <img src="./assets/notes06.png" alt="notes06">
+        </div>
+        <a class="next pointer" onclick="plusSlides(1, 'proj-2', 'dot2')">&#10095;</a>
+      </div>
+
+      <div>
+        <span class="dot dot2" onclick="currentSlide(1, 'proj-2', 'dot2')"></span> 
+        <span class="dot dot2" onclick="currentSlide(2, 'proj-2', 'dot2')"></span> 
+        <span class="dot dot2" onclick="currentSlide(3, 'proj-2', 'dot2')"></span>
+        <span class="dot dot2" onclick="currentSlide(4, 'proj-2', 'dot2')"></span> 
+        <span class="dot dot2" onclick="currentSlide(5, 'proj-2', 'dot2')"></span> 
+        <span class="dot dot2" onclick="currentSlide(6, 'proj-2', 'dot2')"></span>  
+      </div>
+    </div>
+  </div>
+
+  <div class='project-container' tabindex="1" accesskey="h">
+    <div class='container1'>
+      <a href='https://hackyourtrip.io/'>
+        <h3>Hack Your Trip</h3>
+      </a>
+      <p>
+        This was my first Hackathon and I loved it. I really loved the 
+        positive environment and it was a great learning experience.
+        It was sponsored by Discover on December 8th-9th 2018.<br />
+
+        Our Team was make up of myself, two python developers working on
+        the backend, a frontend React developer and a designer to pull it
+        all together.<br /> 
+
+        My position on the team was working on the frontend. I started out 
+        by building up the structure of the components we were going to use
+        along with the landing page of the app. I also headed linking our
+        components to the API's that Discover supplied. Later after helping
+        to build up the components with the data, I created and linked the 
+        Signup/ Register features to the server.
+      </p>
+      <div class="project-pictures">
+        <a class="prev pointer" onclick="plusSlides(-1,'proj-3', 'dot3')">&#10094;</a>
+
+        <div class="proj-3">
+          <img src="./assets/hack01.png" alt="hack01">
+        </div>
+
+        <div class="proj-3">
+          <img src="./assets/hack02.png" alt="hack02">
+        </div>
+
+        <div class="proj-3">
+            <img src="./assets/hack03.jpeg" alt="hack03">
+        </div>
+
+        <div class="proj-3">
+          <img src="./assets/hack04.jpeg" alt="hack04">
+        </div>
+
+        <div class="proj-3">
+          <img src="./assets/hack05.jpeg" alt="hack05">
+        </div>
+
+        <div class="proj-3">
+          <img src="./assets/hack06.jpeg" alt="hack06">
+        </div>
+
+        <a class="next pointer" onclick="plusSlides(1,'proj-3', 'dot3')">&#10095;</a>
+      </div>
+      <div>
+        <span class="dot dot3" onclick="currentSlide(3,'proj-3', 'dot3')"></span> 
+        <span class="dot dot3" onclick="currentSlide(4,'proj-3', 'dot3')"></span>
+        <span class="dot dot3" onclick="currentSlide(1,'proj-3', 'dot3')"></span> 
+        <span class="dot dot3" onclick="currentSlide(2,'proj-3', 'dot3')"></span> 
+        <span class="dot dot3" onclick="currentSlide(5,'proj-3', 'dot3')"></span> 
+        <span class="dot dot3" onclick="currentSlide(6,'proj-3', 'dot3')"></span> 
+              </div>
+    </div>
+  </div>
+
+  <div class="project-container ip" tabindex="1" accesskey="i">
     <div class='container2'>
       <h3>Currently In Process</h3>
       <h4>-Connies</h4>
@@ -146,23 +262,32 @@
         my area. It is a family owned business that lacks a website of any
         kind.
       </p>
-      <a class="ul-mid-out" href="https://github.com/Vegitarius/connies-local">
+      <a class="ul-mid-out" tabindex="2"
+         href="https://github.com/Vegitarius/connies-local">
         Visit Repo
       </a>
       <span>Or</span>
-      <a class="ul-mid-out" href="https://vegitarius.github.io/connies-local/">
+      <a class="ul-mid-out" tabindex="2"
+         href="https://vegitarius.github.io/connies-local/">
         Visit Progress
       </a>
 
       <h4>-Weather App</h4>
       <p>
-        I am also working on a weather web app using React
+        In my free time I am working on a weather app using React. The app's state
+        quickly became a lot to manage and I implemented Redux to help me manage
+        it. Currentlyit is using the built in navigator object in browsers to locate the user
+        sending the latitude and longitude of the user to Google's geocode API
+        so the App with display their location and then to DarkSky's weather API
+        to get their weather information and displays it in a component.
       </p>
-      <a class="ul-mid-out" href="https://github.com/Vegitarius/weather">
+      <a class="ul-mid-out" tabindex="2"
+         href="https://github.com/Vegitarius/weather">
         Visit Repo
       </a>
       <span>Or</span>
-      <a class="ul-mid-out" href="https://weather4-u.herokuapp.com/">
+      <a class="ul-mid-out" tabindex="2"
+         href="https://weather4-u.herokuapp.com/">
         Visit Progress
       </a>
     </div>
@@ -189,10 +314,11 @@
         <p class="contact-left">LinkedIn:</p>
         <a class="contact-right ul-mid-out" href="https://www.linkedin.com/in/vincent-gordon-59b265173">vgordon</a>
       </div>
+
     </div>
   </div>
 
   <script src="./src/es5_scripts/script.js"></script>
-  <script src="./src/es5_scripts/project.js"></script>
+  <script src="./src/scripts/project.js"></script>
 </body>
 </html>

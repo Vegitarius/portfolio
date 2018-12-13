@@ -18,7 +18,7 @@
     <span class="ham-icon3"></span>
   </div>
 
-  <a id="home" href="/">
+  <a id="home" href="/" tabindex="1">
     Vin G Works
   </a>
 
@@ -42,7 +42,7 @@
     </ul>  
   </nav>
 
-  <nav id="social-bar">
+  <nav id="social-bar" tabindex="1">
     <ul>
       <li>
         <a href="https://www.linkedin.com/in/vincent-gordon-59b265173">
@@ -90,7 +90,7 @@
   
   <div id="particles-js">
   </div>
-  <div id="welcome">
+  <div id="welcome" accesskey="w" tabindex="1">
     <h1 id="title">Hello, my name is Vincent Gordon</h1>
     <h2>Welcome to my Personal Website</h2>
     <button id="welcome-button">View my Portfolio</button>
@@ -98,7 +98,7 @@
 
 
   <div id="about-wrap" tabindex="1">
-    <div id="about">
+    <div id="about" accesskey="a">
       <div id="about-area">
         <img id="me-image" src="./assets/0.jpg" alt="me" />
         <div id="about-info">
@@ -118,7 +118,7 @@
     </div>
   </div>
 
-  <div id="qualifications" tabindex="1">
+  <div id="qualifications" tabindex="1" accesskey="q">
       <h3 id="qual-title">My Current Skills/ Qualifications I have worked with</h3>
     <div id="qual-container">
       <img 
@@ -154,7 +154,7 @@
   </div>
 
   <div id="contact-topper"></div>
-  <div id="contact" tabindex="1">
+  <div id="contact" tabindex="1" accesskey="c">
     <h3>Get in Touch</h3>
     <p id="contact-desc">If you want to get in contact with me for anything or just
       say hello shoot me an E-mail.
@@ -162,22 +162,25 @@
     <div id="contact-info">
       <div id="contact-email">
         <p class="contact-left">E-mail:</p>
-        <a class="contact-right ul-mid-out" href="mailto:gordonv15@gmail.com">gordonv15@gmail.com</a>
+        <a class="contact-right ul-mid-out" tabindex="2"
+           href="mailto:gordonv15@gmail.com">gordonv15@gmail.com</a>
       </div>
       <div id="contact-git">
         <p class="contact-left">GitHub:</p>
-        <a class="contact-right  ul-mid-out" href="https://github.com/Vegitarius">Vegitarius</a>
+        <a class="contact-right ul-mid-out" tabindex="2"
+           href="https://github.com/Vegitarius">Vegitarius</a>
       </div>
       <div id="contact-linkedin">
         <p class="contact-left">LinkedIn:</p>
-        <a class="contact-right  ul-mid-out" href="https://www.linkedin.com/in/vincent-gordon-59b265173">vgordon</a>
+        <a class="contact-right  ul-mid-out" tabindex="2"
+           href="https://www.linkedin.com/in/vincent-gordon-59b265173">vgordon</a>
       </div>
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="./src/es5_scripts/script.js"></script>
-  <script src="./src/es5_scripts/index.js"></script>
+  <script src="./main.js"></script>
   
 </body>
 </html>
