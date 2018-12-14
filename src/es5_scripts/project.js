@@ -1,22 +1,24 @@
 "use strict";
 
+// require("core-js/modules/es6.regexp.replace");
+
 var slideIndex = 1;
-showSlides(slideIndex, "my-slide");
-showSlides(slideIndex, "p2");
-showSlides(slideIndex, "proj-3");
+showSlides(slideIndex, "proj-1", 'dot1');
+showSlides(slideIndex, "proj-2", 'dot2');
+showSlides(slideIndex, "proj-3", 'dot3');
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, pName, dName) {
+  showSlides(slideIndex += n, pName, dName);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, pName, dName) {
+  showSlides(slideIndex = n, pName, dName);
 }
 
-function showSlides(n, pName) {
+function showSlides(n, pName, dName) {
   var i;
   var slides = document.getElementsByClassName(pName);
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName(dName);
 
   if (n > slides.length) {
     slideIndex = 1;

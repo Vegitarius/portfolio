@@ -1,5 +1,7 @@
 "use strict";
 
+// require("core-js/modules/web.dom.iterable");
+
 var hamburger = document.getElementById("hamburger");
 var navLinks = document.querySelectorAll(".nav-link");
 var navbar = document.getElementById("navbar");

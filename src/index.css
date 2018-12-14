@@ -50,6 +50,10 @@
   justify-content: center;
 }
 
+#about h3 {
+  font-size: 3vh;
+}
+
 #about-area {
   background: #2c2e43;
   background: var(--color1);
@@ -91,6 +95,7 @@
   text-align: center;
   background: #2c2e43;
   background: var(--color1);
+  font-size: 24px;
 }
 
 #qual-title {

@@ -1,14 +1,17 @@
 "use strict";
 
-particlesJS.load('particles-js', '../assets/particles.json', function () {
+particlesJS.load('particles-js', '../../assets/particles.json', function () {
   console.log('callback - particles.js config loaded');
 });
-document.getElementById("welcome-button").addEventListener("click", function () {
+var welcome = document.getElementById("welcome-button");
+var about = document.getElementById("nav-about");
+var qual = document.getElementById("nav-qual");
+welcome.addEventListener("click", function () {
   document.getElementById("about").scrollIntoView({
     behavior: "smooth"
   });
 });
-document.getElementById("nav-about").addEventListener("click", function () {
+about.addEventListener("click", function () {
   var about = document.getElementById("about");
   about.scrollIntoView({
     block: "start",
@@ -16,7 +19,7 @@ document.getElementById("nav-about").addEventListener("click", function () {
   });
   hamburgerToggle();
 });
-document.getElementById("nav-qual").addEventListener("click", function () {
+qual.addEventListener("click", function () {
   var quals = document.getElementById("qualifications");
   quals.scrollIntoView({
     block: "start",
