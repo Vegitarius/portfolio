@@ -92,7 +92,7 @@
       </a>
       <p>This was my first website that I deployed. It was my first dive
         into React. I also used Node for the server and PostgreSQL for the 
-        database. <br />
+        database. <br /> <br />
         It is a simple website application that detects a face,
         outlining it when provided a link to a picture using the Clarifai
         API.
@@ -146,7 +146,7 @@
       <p>
         This was my first foray into building in aws and serverless. After
         hearing about it multiple times on podcasts I decided to check out
-        what it was all about.<br />
+        what it was all about.<br /><br />
         Throughout building the backend I learned a lot.<br />
         The frontend was built in React taking advantage of react-bootstrap
         and react-router.
@@ -201,11 +201,11 @@
         This was my first Hackathon and I loved it. I really loved the 
         positive environment and it was a great learning experience.
         It was sponsored by Discover on December 8th-9th 2018.<br />
-
+        <br />
         Our Team was made up of myself, two python developers working on
         the backend, a frontend React developer and a designer to pull it
         all together.<br /> 
-
+        <br />
         My position on the team was working on the frontend. I started out 
         by building up the structure of the components we were going to use
         along with the landing page of the app. I also headed linking our
@@ -217,11 +217,11 @@
         <a class="prev pointer" onclick="plusSlides(-1,'proj-3', 'dot3')">&#10094;</a>
 
         <div class="proj-3">
-          <img src="./assets/hack01.png" alt="hack01">
+          <img src="./assets/hack01.jpeg" alt="hack01">
         </div>
 
         <div class="proj-3">
-          <img src="./assets/hack02.png" alt="hack02">
+          <img src="./assets/hack02.jpeg" alt="hack02">
         </div>
 
         <div class="proj-3">
@@ -233,28 +233,70 @@
         </div>
 
         <div class="proj-3">
-          <img src="./assets/hack05.jpeg" alt="hack05">
+          <img src="./assets/hack05.png" alt="hack05">
         </div>
 
         <div class="proj-3">
-          <img src="./assets/hack06.jpeg" alt="hack06">
+          <img src="./assets/hack06.png" alt="hack06">
         </div>
 
         <a class="next pointer" onclick="plusSlides(1,'proj-3', 'dot3')">&#10095;</a>
       </div>
       <div>
-        <span class="dot dot3" onclick="currentSlide(3,'proj-3', 'dot3')"></span> 
-        <span class="dot dot3" onclick="currentSlide(4,'proj-3', 'dot3')"></span>
         <span class="dot dot3" onclick="currentSlide(1,'proj-3', 'dot3')"></span> 
-        <span class="dot dot3" onclick="currentSlide(2,'proj-3', 'dot3')"></span> 
+        <span class="dot dot3" onclick="currentSlide(2,'proj-3', 'dot3')"></span>
+        <span class="dot dot3" onclick="currentSlide(3,'proj-3', 'dot3')"></span> 
+        <span class="dot dot3" onclick="currentSlide(4,'proj-3', 'dot3')"></span> 
         <span class="dot dot3" onclick="currentSlide(5,'proj-3', 'dot3')"></span> 
         <span class="dot dot3" onclick="currentSlide(6,'proj-3', 'dot3')"></span> 
               </div>
     </div>
   </div>
 
-  <div class="project-container ip" tabindex="1" accesskey="i">
+  <div class='project-container' tabindex="1" accesskey="w">
     <div class='container2'>
+      <a href='https://weather4-u.herokuapp.com/'>
+        <h3>Weather App</h3>
+      </a>
+      <p>
+        In my free time I am working on a weather app using React. The app's state
+        quickly became a lot to manage and I implemented Redux to help me manage
+        it. Currently it is using the built in navigator object in browsers to locate the user
+        sending the latitude and longitude of the user to Google's geocode API
+        so the App with display their location and then to DarkSky's weather API
+        to get their weather information and displays it in a component.
+      </p>
+      <div class="project-pictures">
+        <a class="prev pointer" onclick="plusSlides(-1,'proj-4', 'dot4')">&#10094;</a>
+
+        <div class="proj-4">
+          <img src="./assets/weather01.png" alt="hack01">
+        </div>
+
+        <div class="proj-4">
+          <img src="./assets/weather02.png" alt="hack02">
+        </div>
+
+        <div class="proj-4">
+            <img src="./assets/weather03.png" alt="hack03">
+        </div>
+
+        <div class="proj-4">
+          <img src="./assets/weather04.png" alt="hack04">
+        </div>
+        <a class="next pointer" onclick="plusSlides(1,'proj-4', 'dot4')">&#10095;</a>
+      </div>
+      <div>
+        <span class="dot dot4" onclick="currentSlide(1,'proj-4', 'dot4')"></span> 
+        <span class="dot dot4" onclick="currentSlide(2,'proj-4', 'dot4')"></span>
+        <span class="dot dot4" onclick="currentSlide(3,'proj-4', 'dot4')"></span> 
+        <span class="dot dot4" onclick="currentSlide(4,'proj-4', 'dot4')"></span> 
+      </div>
+    </div>
+  </div>
+
+  <div class="project-container ip" tabindex="1" accesskey="i">
+    <div class='container1'>
       <h3>Currently In Process</h3>
       <h4>-Connies</h4>
       <p>
@@ -274,26 +316,6 @@
         </a>
       </span>
 
-      <h4>-Weather App</h4>
-      <p>
-        In my free time I am working on a weather app using React. The app's state
-        quickly became a lot to manage and I implemented Redux to help me manage
-        it. Currently it is using the built in navigator object in browsers to locate the user
-        sending the latitude and longitude of the user to Google's geocode API
-        so the App with display their location and then to DarkSky's weather API
-        to get their weather information and displays it in a component.
-      </p>
-      <span>
-        <a class="ul-mid-out" tabindex="2"
-          href="https://github.com/Vegitarius/weather">
-          Visit Repo
-        </a>
-        <span>Or</span>
-        <a class="ul-mid-out" tabindex="2"
-          href="https://weather4-u.herokuapp.com/">
-          Visit Progress
-        </a>
-      </span>
     </div>
   </div>
 

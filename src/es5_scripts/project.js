@@ -1,11 +1,10 @@
 "use strict";
 
-// require("core-js/modules/es6.regexp.replace");
-
 var slideIndex = 1;
 showSlides(slideIndex, "proj-1", 'dot1');
 showSlides(slideIndex, "proj-2", 'dot2');
 showSlides(slideIndex, "proj-3", 'dot3');
+showSlides(slideIndex, "proj-4", 'dot4');
 
 function plusSlides(n, pName, dName) {
   showSlides(slideIndex += n, pName, dName);
